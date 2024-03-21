@@ -43,4 +43,15 @@ print(option_images[user_choice])
 print(f"Opponent chose: {option_text[opponent_choice]}")
 print(option_images[opponent_choice])
 
-
+if user_choice < 0 or user_choice > 2:
+  print("Input not recognized. Goodbye!")
+elif user_choice == opponent_choice:
+  print("Tie game!")
+elif user_choice == 0 and opponent_choice == 2:
+  print("You win!")
+elif user_choice == 1 and opponent_choice == 0:
+  print("You win!")
+elif user_choice == 2 and opponent_choice == 1:
+  print("You win!")
+else:
+  print("You lose!")
